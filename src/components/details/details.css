@@ -1,0 +1,40 @@
+img {
+    width:100%;
+}
+
+.product-img {
+    width: 35%;
+}
+
+.singleProduct {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #868686;
+    padding: 20px 40px;
+}
+
+.product-details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.product-details h4  {
+  font-size: 17px;
+} 
+.product-details p  {
+    text-align: left;
+    width: 70%;
+  
+} 
+
+Button {
+    margin-top: 20px;
+}

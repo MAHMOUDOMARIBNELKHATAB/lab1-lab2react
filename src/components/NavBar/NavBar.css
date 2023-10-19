@@ -1,0 +1,22 @@
+
+
+.nav {
+padding: 10PX 10%;
+display: flex !important;
+align-items: center !important;
+justify-content: space-between !important;
+
+}
+
+
+
+.navbar-collapse {
+     flex-grow: 0 !important; 
+}
+
+.Link {
+     color: black;
+     padding-left: 30px;
+     text-decoration: none ;
+
+}

@@ -31,7 +31,7 @@ test('should render decrement button', () => {
     expect(decrementButton).toBeInTheDocument();
 });
 
-test('when we click  decrement button the counter value should br decrement', () => {
+test('when we click decrement button the counter value should be decrement', () => {
     render(<About/>);
     const Counter = screen.getByText('10')
     expect(Counter).toBeInTheDocument();

@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 
 const About = () => { 
-  const [counter, setCounter] = useState(0) 
+  const [counter, setCounter] = useState(10) 
   
   const handleClick1 = () => { 
     setCounter(counter + 1) 

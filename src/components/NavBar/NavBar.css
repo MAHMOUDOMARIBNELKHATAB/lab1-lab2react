@@ -5,9 +5,13 @@ padding: 10PX 10%;
 display: flex !important;
 align-items: center !important;
 justify-content: space-between !important;
+background-color: #121821 !important;
+
 
 }
-
+.logo {
+     color: #e2e4e5 !important;
+}
 
 
 .navbar-collapse {
@@ -15,7 +19,7 @@ justify-content: space-between !important;
 }
 
 .Link {
-     color: black;
+     color: #e2e4e5 !important;
      padding-left: 30px;
      text-decoration: none ;
 

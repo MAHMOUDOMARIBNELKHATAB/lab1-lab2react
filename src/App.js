@@ -5,6 +5,7 @@ import { BrowserRouter,Routes , Route } from "react-router-dom";
 import Details from "./components/details/Details.jsx";
 import Home from "./components/shop/Home.jsx";
 import About from "./components/counter-lab1/About.jsx";
+import Loader from "./components/loader/loader.jsx";
 
 
 

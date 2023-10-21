@@ -2,24 +2,14 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./details.css"
 import Button from 'react-bootstrap/Button';
-
+import userGetDetails from "../hooks/userGetDetails";
 
 const Details = () => {
 
-  const param = useParams();
-  const [product,setProduct] = useState({})
+
+  const [ product] =  userGetDetails()
 
 
-const getSingleProduct = () => {
-
-  return fetch(`https://fakestoreapi.com/products/${param.id}`)
-  .then(res=>res.json())
-  .then(json=>setProduct(json))
-}
-
-useEffect (()=> {
-  getSingleProduct()
-}, [])
 
 return (
 

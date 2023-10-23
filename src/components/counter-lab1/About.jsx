@@ -6,9 +6,6 @@ import store from "../../redux/store";
 import { UseSelector } from "react-redux/es/hooks/useSelector";
 import { increment ,decrement } from "../../redux/slice/counterSlice";
 import { useDispatch } from "react-redux";
-
-
-
  
 const About = () => { 
   const dispatch = useDispatch()

@@ -1,43 +1,56 @@
 import { useState } from "react";
-import './counter.css'
-import Button from 'react-bootstrap/Button';
-import { useSelector } from "react-redux";
-import store from "../../redux/store";
-import { UseSelector } from "react-redux/es/hooks/useSelector";
-import { increment ,decrement } from "../../redux/slice/counterSlice";
-import { useDispatch } from "react-redux";
- 
-const About = () => { 
-  const dispatch = useDispatch()
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {} from "@heroicons/react/24/outline";
+import style from "./counter.css";
 
-  const counterGlobalState = useSelector(store => store.counter); 
-  console.log(counterGlobalState.counter);
 
-  const handelIncrement =() => {
-    dispatch(increment())
+import logo from "../../logo.png";
+const navigation = [
+  { name: "Product", href: "#" },
+  { name: "Features", href: "#" },
+  { name: "Marketplace", href: "#" },
+  { name: "Company", href: "#" },
+];
 
-  }
-  const handeldecrement =() => {
-    dispatch(decrement())
+export default function Example() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  }
+  return (
+    <>
+      <section className="px-3 py-4  lg:py-10 bg-[#eae0da]">
+        <div className="grid lg:grid-cols-2 items-center justify-items-center gap-5 w-full sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-5  mx-auto">
+          <div className="text-start">
+          <h1 className="text-4xl font-bold cloud-text cloud-title  text-lg-start hero__title tracking-tight text-gray-900 sm:text-5xl text-sm-center  ">
+              Real estate your online business
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600 font-[Poppins] px-8">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+              fugiat aliqua.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md  px-3.5 py-2.5 bg-[#bca37f] text-sm font-[Poppins] text-black shadow-sm hover:bg-[#eae0da] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </a>
+            </div>
+          </div>
+          <div className="order-2 lg:order-1">
+            <img
+              src={logo}
+              className="w-[100%] h-100 lg:py-8 sm:py-4 "
+            />
+          </div>
+        </div>
+      </section>
 
-    return (
-      <div  className="counter"> 
-        Counter App 
-        <div> 
-          {counterGlobalState.counter} 
-        </div> 
-        <div className="buttons"> 
-        <Button onClick={handelIncrement}  variant="primary">Increment</Button>{' '}
-
-        <Button   onClick={handeldecrement}   variant="danger">Decrement</Button>{' '}
-
-        
-        </div> 
-      </div> 
-    ) 
-  };
-  
-  export default About;
-  
+      {/* commment */}
+    
+      
+      
+    </>
+  );
+}

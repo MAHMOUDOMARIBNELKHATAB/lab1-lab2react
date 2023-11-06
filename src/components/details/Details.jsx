@@ -8,6 +8,7 @@ const Details = () => {
 
 
   const [ product] =  userGetDetails()
+  
 
 
 
